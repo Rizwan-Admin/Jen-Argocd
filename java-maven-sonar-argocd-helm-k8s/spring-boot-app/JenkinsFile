@@ -1,11 +1,4 @@
 pipeline {
-    agent {
-        docker {
-            image 'wasiq1455/maven:latest'
-            args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }
-
     stages {
         stage('Checkout') {
             steps {
