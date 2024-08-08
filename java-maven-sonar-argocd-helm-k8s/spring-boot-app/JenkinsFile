@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'iamsakib/maven:latest'
+            image 'wasiq1455/maven:latest'
             args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
